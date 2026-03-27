@@ -5,7 +5,7 @@
 > **Team Size:** 2 students  
 > **Project Duration:** 4 weeks  
 > **Class Time Available:** 6 hours per class  
-> **Total Time Available:** 48 man-hours per team  
+> **Total Time Available:** 48 effort-hours per team  
 > **Project Type:** Playful, interactive, technology-based experience
 
 ---
