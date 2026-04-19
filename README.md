@@ -103,7 +103,9 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`- Engaging ones mind and whole body while playing a game. The player will have to fully immerse themself in the game. Along with this they will have to balance themself on the balance board and not `
+`It’s an experience that engages you completely. Along with controlling your movement in the game, the player is also trying not to fall off the board, which adds this extra layer of tension that makes everything feel more alive and slightly chaotic in the best way.
+I want the player to feel a rush, like they’re fully switched on. It’s a mix of excitement, focus, and a bit of chaos, especially in the beginning when nothing really goes as planned. There’s also something a little funny about it; they might wobble, overcorrect, almost lose balance, but that’s part of the fun. And when they finally start getting it right, it feels genuinely satisfying.
+They’d want to try it again because it’s not something you get perfect in one go. The first attempt is messy, the second feels better, and after that you just want to keep improving or beat someone else. It also becomes more fun with people around—watching others try, laughing at the chaos, taking turns. There’s a clear sense of progression too, not just in the game but in how one's body learns to respond, which makes it really rewarding to come back to it.`
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -122,15 +124,15 @@ List what inspired the project.
 
 | Source Type | Title / Link | What Inspired You |
 |---|---|---|
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
+| `Object` | `Arcade games with large joysticks controlling the game on the screen` | `A tangible object controlling the players movement on screen` |
+| `Object` | `XBox` | `Immersing the player in the game by turning their body movements into the controls, so what they do physically directly drives what happens on screen.` |
+| `Toy` | `A dance mat. https://www.amazon.in/Musical-Electronic-Different-Difficulty-Interactive/dp/B0BDMZNH8B` | `Physically moving to or stamping on the area of the respective contols` |
 
 ## 3.2 Original Twist
 What makes your project original?
 
 **Response:**  
-`[Write here]`
+`Arcade games use joysticks, Xbox uses wireless controllers that the player has to hold at all times and a dance mat uses a floor mat as controllers for the game. None of these have explored using a balance board. It is more intuitive for games like Fireboy and Watergirl where quick, combined movements(jump+side) are required. It also adds a layer of fun and challenge to the game.`
 
 ---
 
@@ -146,37 +148,40 @@ Examples:
 - move object → sensor detects → sound/light response → player reacts
 
 **Response:**  
-`[Write here]`
+`Player leans / shifts weight → board tilts → respective sensors detect movement → keypress triggered → video game character moves → player adjusts balance → repeat`
 
 ## 4.2 Intended Player / Audience
 
 | Question | Response |
 |---|---|
-| Who is this for? | `[Write here]` |
-| Age range | `[Write here]` |
-| Solo or multiplayer | `[Write here]` |
-| Expected duration of one round | `[Write here]` |
-| What should the player feel? | `[Write here]` |
-| Is explanation required before use? | `[Write here]` |
+| Who is this for? | `Anyone who enjoys casual games and is open to a slightly chaotic, physical way of playing, especially people who like trying something new with friends` |
+| Age range | `7-65(or more if they can balance themself and manoeuvre with ease) ` |
+| Solo or multiplayer | `Multiplayer- 2 players` |
+| Expected duration of one round | `2-5 mins` |
+| What should the player feel? | `Focus, Excitement, Satisfaction` |
+| Is explanation required before use? | `Minimal—quick demo helps, but most people figure it out just by stepping on and trying` |
 
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
 
-1. **Approach:** `[How does the player first encounter it?]`
-2. **Start:** `[How do they begin?]`
-3. **First Action:** `[What do they do first?]`
-4. **Main Interaction:** `[What keeps happening during use?]`
-5. **System Response:** `[How does the project respond?]`
-6. **Win / Lose / End Condition:** `[How does one round end?]`
-7. **Reset:** `[How does the next round begin?]`
+1. **Approach:** `They see the video game being projected on a screen and two balance boards kept in front of the screen`
+2. **Start:** `By standing on their respective balance boards`
+3. **First Action:** `Figuring out the controls and the amount of tilt required`
+4. **Main Interaction:** `The player tilts the balance board, it hits a wedge kept on its respective direction to prevent the balance board from toppling over`
+5. **System Response:** `For example, if the watergirl balance board is tilted towards the right, the ultrasonic sensor on the right will trigger a 'D' keypress which will make Watergirl move to the right. The same for Fireboy and his respective controls.  `
+6. **Win / Lose / End Condition:** `Win: When both the characters are able to successfully make it till the end of the level. 
+                                    Lose: When one of the character dies`
+7. **Reset:** `Can be controlled in the video game itself`
 
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `[Rule 1]`
-- `[Rule 2]`
-- `[Rule 3]`
-- `[Rule 4]`
+- `The character moves according to the direction the player tilts the balance board`
+- `The game starts once both players are ready and balanced.`
+- `Players control their characters by leaning and shifting their body weight. No hands, no keyboard.`
+- `If even one player dies, the other one dies as well`
+- `Both the players need to finish the level to win`
+- `Each player is allowed to fall off the balance board only once. If the player falls off the balance board more than once, they will have to restart the level`
 
 ---
 
@@ -185,23 +190,21 @@ If your project is a game, list the rules clearly.
 ## 5.1 Definition of “Playable”
 Your project will be considered complete only if these conditions are met.
 
-- [ ] `[Condition 1]`
-- [ ] `[Condition 2]`
-- [ ] `[Condition 3]`
-- [ ] `[Condition 4]`
-- [ ] `[Condition 5]`
+- [ ] `The gameplay feels intuituive and responsive, not frustrating or laggy`
+- [ ] `Players can complete at least one full level using only the balance board`
+- [ ] `The balance board reliably detects body movement`
 
 ## 5.2 Minimum Viable Version
 What is the smallest version of this project that still delivers the core experience?
 
 **Response:**  
-`[Write here]`
+`A cardboard model of the balance board with the ultrasonic sensors attached to its bottom surface. One can't stand on it but the tilting mechanism can be tested on it. If one wants to test standing on it, the minimum viable version can be a balance board bought from stores or that made of HDF and plywood.`
 
 ## 5.3 Stretch Features
 What features are nice to have but not essential?
 
-- `[Stretch feature 1]`
-- `[Stretch feature 2]`
+- `Custom sensitivity modes- – adjust how responsive the board is (easy for beginners, harder for advanced)`
+- `Lights, sound, or vibration on the board reacting to movement or mistakes`
 - `[Stretch feature 3]`
 
 ---
