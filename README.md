@@ -205,7 +205,7 @@ What features are nice to have but not essential?
 
 - `Custom sensitivity modes- – adjust how responsive the board is (easy for beginners, harder for advanced)`
 - `Lights, sound, or vibration on the board reacting to movement or mistakes`
-- `[Stretch feature 3]`
+
 
 ---
 
@@ -216,13 +216,13 @@ Check all that apply.
 
 - [ ] Electronics-based
 - [ ] Mechanical
-- [ ] Sensor-based
+- [+] Sensor-based
 - [ ] App-connected
 - [ ] Motorized
 - [ ] Sound-based
 - [ ] Light-based
 - [ ] Screen/UI-based
-- [ ] Fabricated structure
+- [+] Fabricated structure
 - [ ] Game logic based
 - [ ] Installation / tabletop experience
 - [ ] Other: `[Write here]`
@@ -237,17 +237,21 @@ Include:
 - physical structure,
 - app interaction if any.
 
-**Response:**  
-`[Write here]`
+**Response:** 
+`The input comes from the player standing on a balance board and shifting their weight. As the board tilts, ultrasonic sensors placed underneath measure the changing distance between the board and the ground. Multiple readings are taken and averaged to make the input smoother and reduce noise. `
 
+`This data is processed by the ESP32, which checks whether the distances fall within a specific range(which is calibrated according to the height of the balance board and coded). If they do, the movement is considered intentional and mapped to corresponding actions like left, right, or jump for each player. `
+
+`This is then converted to a signal which triggers the respective keypress on the keyboard, which is connected to the ESP32 via bluetooth. The game responds by moving the characters accordingly. Physically, the setup consists of a raised balance board with ultrasonic sensors mounted underneath and connected to the ESP32, creating a system where your body directly controls the gameplay.`
+ 
 ## 6.3 Input / Output Map
 
 | System Part | Type | What It Does |
 |---|---|---|
-| `[Button / Sensor / Switch / App Input]` | Input | `[Describe]` |
-| `[ESP32 / Controller]` | Processing | `[Describe]` |
-| `[LED / Motor / Servo / Buzzer / Display]` | Output | `[Describe]` |
-| `[Mechanical Assembly]` | Physical Action | `[Describe]` |
+| `Sensor` | Input | `Measures the distance between the board and the ground to detect tilt and weight shifts` |
+| `ESP32 ` | Processing | `Reads sensor data, filters/smooths it, checks for trigger conditions, and converts movements into keyboard inputs` |
+| `BLE Keyboard` | Output | `Transmits the mapped inputs wirelessly as keyboard signals to the computer` |
+| `Balance Board` | Physical Action | `Lets the player shift weight and create the inputs through body movement` |
 
 ---
 
@@ -257,7 +261,8 @@ Include:
 Add an early sketch of the full idea.
 
 **Insert image below:**  
-`[Upload image and link here]`
+`<img width="551" height="342" alt="image" src="https://github.com/user-attachments/assets/60c6d2f2-7a64-4dd7-b405-5efa2feba472" />
+`
 
 Example:
 ```md
