@@ -783,7 +783,11 @@ Example:
 Describe the final version of your project.
 
 **Response:**  
-`[Write here]`
+`[The final version of our project is a seated, foot-controlled balance board system that allows two players to control Fireboy and Watergirl using physical movement instead of a keyboard. Each player sits on a chair and uses their feet to tilt a balance board placed on the ground.`
+
+`Ultrasonic sensors mounted underneath the board detect changes in distance as the board tilts in different directions (left, right, and jump). These inputs are processed by an ESP32, which converts them into keyboard signals and sends them to the computer via Bluetooth.`
+
+`This setup creates a more stable and controlled interaction compared to standing, while still maintaining a playful and physical gameplay experience. The result is an engaging system where players use coordination and timing with their feet to navigate the game.]`
 
 ## 18.2 What Works Well
 - `[Point 1]`
