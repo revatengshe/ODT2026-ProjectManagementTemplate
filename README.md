@@ -62,7 +62,7 @@ By the final review, this README should clearly show:
 | `Ananya Jayakumar` | `Electronics, Fabrication ` | `Coding,/ Mechanics ` | `Good understanding of circuitry, materials and working with them.` |
 
 ## 1.3 Project Title
-`[Enter the title of your project]`
+`[Balanceboard Game Controller]`
 
 ## 1.4 One-Line Pitch
 `A balance board that lets you control games like Fireboy and Watergirl using your feet.`
@@ -271,7 +271,7 @@ Add a sketch with labels showing:
 - moving parts,
 - output elements.
 
-**Insert image below:**  
+
 <img src="images/balanceboard construction sketches.jpeg" width="400">
 <img src="images/sketches.jpeg" width="400">
 
@@ -282,7 +282,7 @@ Add a sketch with labels showing:
 | Length | `44cm` |
 | Width | `44cm` |
 | Height | `10cm` |
-| Estimated weight | `7-8kg` |
+| Estimated weight | `7-8kg each` |
 
 ---
 
@@ -373,7 +373,6 @@ Describe the main electrical connections.
 ## 9.3 Circuit Diagram
 Insert a hand-drawn or software-made circuit diagram.
 
-**Insert image below:**  
 <img src="images/circuit diagram.jpeg" width="400">
 
 ## 9.4 Power Plan
@@ -432,8 +431,7 @@ Suggested sequence:
 - repeat or reset,
 - error handling.
 
-**Insert image below:**  
-`[Upload image and link here]`
+<img src="images/code flowchart.jpeg" width="400">
 
 ## 10.4 Pseudocode
 
@@ -614,37 +612,37 @@ Include:
 
 ### Week 1 — Plan and De-risk
 Expected outcomes:
-- [ ] Idea finalized
-- [ ] Core interaction decided
-- [ ] Sketches made
-- [ ] BOM completed
-- [ ] Purchase needs identified
-- [ ] Key uncertainty identified
-- [ ] Basic feasibility tested
+- [+] Idea finalized
+- [+] Core interaction decided
+- [+] Sketches made
+- [+] BOM completed
+- [+] Purchase needs identified
+- [+] Key uncertainty identified
+- [+] Basic feasibility tested
 
 ### Week 2 — Build Subsystems
 Expected outcomes:
-- [ ] Electronics tests completed
-- [ ] CAD / structure planning completed
-- [ ] App UI started if needed
-- [ ] Mechanical concept tested
-- [ ] Main subsystems partially working
+- [+] Electronics tests completed
+- [+] CAD / structure planning completed
+- [+] App UI started if needed
+- [+] Mechanical concept tested
+- [+] Main subsystems partially working
 
 ### Week 3 — Integrate
 Expected outcomes:
-- [ ] Physical body built
-- [ ] Electronics integrated
-- [ ] Code connected to hardware
-- [ ] App connected if required
-- [ ] First playable version exists
+- [+] Physical body built
+- [+] Electronics integrated
+- [+] Code connected to hardware
+- [+] App connected if required
+- [+] First playable version exists
 
 ### Week 4 — Refine and Finish
 Expected outcomes:
-- [ ] Technical bugs reduced
-- [ ] Playtesting completed
-- [ ] Improvements made
-- [ ] Documentation completed
-- [ ] Final build ready
+- [+] Technical bugs reduced
+- [+] Playtesting completed
+- [+] Improvements made
+- [+] Documentation completed
+- [+] Final build ready
 
 ## 14.2 Weekly Update Log
 
@@ -703,15 +701,19 @@ What is the single biggest uncertainty in your project at this stage?
 
 | Date | Problem Found | Type | What You Tried | Result | Next Action |
 |---|---|---|---|---|---|
-| `[Date]` | `[Describe issue]` | `[Technical / Mechanical / UI / Gameplay]` | `[What you did]` | `[Worked / Partly / Failed]` | `[Next step]` |
-| `[Date]` | `[Describe issue]` | `[Type]` | `[What you did]` | `[Result]` | `[Next step]` |
+| `[W1]` | `[False triggering without input (foil method)]` | `[Technical]` | `[Used aluminium foil + touch sensing]` | `[Failed]` | `[Switched to Ultrasonic sensors]` |
+| `[W2]` | `[Jump + direction not working together]` | `[Technical]` | `[Modified code logic]` | `[Failed initially]` | `[Rewrite logic for multi-input]` |
+| `[W2]` | `[	Sensor noise at low distances]` | `[Technical]` | `[Added smoothing / anti-flicker in code]` | `[Worked]` | `[	Fine-tune threshold]` |
+| `[W4]` | `[	Standing balance unstable]` | `[Gameplay]` | `[Changed interaction to sitting + feet]` | `[Worked better]` | `[Redesign structure for feet use]` |
 
 ## 16.4 Playtesting Notes
 
 | Tester | What They Did | What Confused Them | What They Enjoyed | What You Will Change |
 |---|---|---|---|---|
-| `[Peer / friend / classmate]` | `[Observation]` | `[Observation]` | `[Observation]` | `[Action]` |
-| `[Peer / friend / classmate]` | `[Observation]` | `[Observation]` | `[Observation]` | `[Action]` |
+| `[Classmate 1` | `[Played using feet while seated]` | `[Didn’t know how much to tilt]` | `[Found it fun and amusing]` | `[Add markings (L/R/J) on board + wedges]` |
+| `[Classmate 2]` | `[Tried combining jump + move]` | `[Timing felt tricky/disconnected]` | `[Liked physical control to be consistent/simultaneous with game on screen]` | `[Improve sensitivity of sensors]` |
+| `[Friend]` | `[Played multiple rounds, determined to finish]` | `[Slight delay in response]` | `[	Competitive aspect (because the game is timed)]` | `[Reduce lag + improve smoothing]` |
+
 
 ---
 
@@ -777,7 +779,7 @@ Suggested images:
 <img src="images/set up 2.jpeg" width="400">
 <img src="images/set up 3.jpeg" width="400">
 
-```
+`
 
 ## 17.3 Version History
 
