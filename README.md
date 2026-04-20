@@ -522,8 +522,8 @@ Insert a sketch or screenshot of the app interface.
 |---|---:|---|---|---:|---|---|
 | `[ESP32]` | `1` | `Yes` | `No` | `0` | `[Spec]` | `Controller` |
 | `Ultrasonic Sensors` | `6` | `1 yes 5 no` | `No(borrowed)` | `-` | `[Spec]` | `Sensor` |
-| `Jumper wires` | `Apprx 120` | `Yes` | `Yes` | `200` | `[Spec]` | `We needed to make our wires long so that moving the balance board won't move the breadboard along with it` |
-
+| `Jumper wires` | `Apprx 120` | `Yes` | `Yes` | `300` | `[Spec]` | `We needed to make our wires long so that moving the balance board won't move the breadboard along with it` |
+ `Electonic Insulation Tape` | `2` | `No` | `200` | `-` | `[Spec]` | `Stick wires together and on the board` |
 
 ## 12.2 Material Justification
 Explain why you selected your main materials and components.
@@ -535,7 +535,9 @@ Examples:
 - Why bearing instead of a plain shaft hole?
 
 **Response:**  
-`- We `
+`- We used HDF and plywood instead of cardboard, MDF or 3D print due to its size and its need to be strong and sturdy.`
+`- We used ultrasonic sensors instead of conductive touch sensors made of aluminium foil because the foil would have torn due to excessive hitting. `
+`- We used MDF for the wedges instead of wood or cardboard because we needed a sturdy but easy to handle material.`
 
 ## 12.3 Items to Purchase Separately
 
@@ -548,18 +550,18 @@ Examples:
 
 | Budget Item | Estimated Cost |
 |---|---:|
-| Electronics | `[Cost]` |
+| Electronics | `500` |
 | Mechanical parts | `[Cost]` |
 | Fabrication materials | `[Cost]` |
 | Purchased extras | `[Cost]` |
 | Contingency | `[Cost]` |
-| **Total** | `[Cost]` |
+| **Total** | `500` |
 
 ## 12.5 Budget Reflection
 If your cost is too high, what can be simplified, removed, substituted, or shared?
 
 **Response:**  
-`[Write here]`
+`After buying the wires, we realised there was a surplus of jumper wires. We could have calculated the exact number of wires and gotten just a few more just in case. Although individual jumper wires are not very expensive. Juat a little prior planning could have saved some money.`
 
 ---
 
@@ -669,7 +671,7 @@ Expected outcomes:
 What is the single biggest uncertainty in your project at this stage?
 
 **Response:**  
-`[Write here]`
+`Ensuring that the sensors reliably detect small foot movements without being too sensitive or too unresponsive. Finding the right balance between accuracy and playability is the main challenge.`
 
 ---
 
@@ -679,20 +681,20 @@ What is the single biggest uncertainty in your project at this stage?
 
 | What Needs Testing | How You Will Test It | Success Condition |
 |---|---|---|
-| `[Bluetooth connection]` | `[Method]` | `[What counts as success?]` |
-| `[Mechanism movement]` | `[Method]` | `[What counts as success?]` |
-| `[Sensor behavior]` | `[Method]` | `[What counts as success?]` |
-| `[App communication]` | `[Method]` | `[What counts as success?]` |
+| `Bluetooth connection` | `Connect ESP32 to laptop multiple times` | `Stable connection without frequent drops` |
+| `Sensor behavior` | `Move board manually and observe readings` | `Consistent and accurate distance values` |
+| `Input response` | `Play the game using the board` | `Character responds correctly to movement` |
+| `Mechanism` | `First prototype with cardboard` | `The character moves according to the tilt` |
 
 ## 16.2 Playtesting Plan
 
 | Question | How You Will Check |
 |---|---|
-| Do players understand what to do? | `[Method]` |
-| Is the interaction satisfying? | `[Method]` |
-| Do players want another turn? | `[Method]` |
-| Is the challenge balanced? | `[Method]` |
-| Is the response clear and immediate? | `[Method]` |
+| Do players understand what to do? | `Let new players try without instructions first and observe if they figure out movement on their own` |
+| Is the interaction satisfying? | `Ask players how it felt after playing and observe their reactions (frustration vs enjoyment)` |
+| Do players want another turn? | `See if they voluntarily ask to replay or continue playing after one round` |
+| Is the challenge balanced? | `Observe if players struggle too much or get through too easily, and ask for feedback` |
+| Is the response clear and immediate? | `Check if players notice a direct connection between their foot movement and character movement` |
 
 ## 16.3 Testing and Debugging Log
 
@@ -750,9 +752,11 @@ Example:
 
 | Version | Date | What Changed | Why |
 |---|---|---|---|
-| `v1` | `[Date]` | `[Describe]` | `[Reason]` |
-| `v2` | `[Date]` | `[Describe]` | `[Reason]` |
-| `v3` | `[Date]` | `[Describe]` | `[Reason]` |
+| `v1` | `` | `Touch sensor with jumper wires` | `The game needed long press, and combined controls` |
+| `v2` | `[Date]` | `Touch sensor with aluminium foil` | `A control mat isn't very intuitive so we wanted to explore other control structures. Also the aluminium foil is triggering the touch sensor` |
+| `v3` | `[Date]` | `Try using ultrasonic sensor with cardboard model` | `Prototyping to see if the mechanism worked` |
+| `v4` | `[Date]` | `Ultrasonic sensor with actual model` | `Worked`|
+
 
 ---
 
