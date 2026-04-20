@@ -790,20 +790,24 @@ Describe the final version of your project.
 `This setup creates a more stable and controlled interaction compared to standing, while still maintaining a playful and physical gameplay experience. The result is an engaging system where players use coordination and timing with their feet to navigate the game.]`
 
 ## 18.2 What Works Well
-- `[Point 1]`
-- `[Point 2]`
-- `[Point 3]`
+- `[The ultrasonic sensors reliably detect tilt and reduce false triggering compared to earlier touch-based methods.]`
+- `[The sensors also work well simultaneously, allowing the player to move 2 directions at the same time.]`
+- `[The Bluetooth keyboard output successfully maps movements to in-game controls with minimal delay]`
 
 ## 18.3 What Still Needs Improvement
-- `[Point 1]`
-- `[Point 2]`
-- `[Point 3]`
+- `[Sensitivity calibration can be further refined for smoother and more precise control, especially for one of the characters.]`
+- `[The physical balance board can be re-shaped and refined for better consistency and intuitive gameplay.]`
+- `[Occasional sensor noise at very close distances still affects accuracy slightly]`
 
 ## 18.4 What Changed From the Original Plan
 How did the project change from the initial idea?
 
 **Response:**  
-`[Write here]`
+`[Initially, the project was designed as a standing balance board where players would control the game using full-body movement. However, during testing, this approach proved unstable and difficult to control, leading to inconsistent sensor readings and gameplay issues.`
+
+`We also experimented with capacitive touch (touch sensors) using aluminium foil, but it resulted in false triggers and unreliable input due to interference and wiring limitations.`
+
+`Based on these challenges, we pivoted to a seated interaction model, where players control the board using their feet. We also switched to ultrasonic sensors, which provided more stable and accurate input detection.`
 
 ---
 
