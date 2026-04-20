@@ -763,6 +763,8 @@ Suggested images:
 <img src="images/balanceboard construction 5.jpeg" width="400">
 <img src="images/final circuit.jpeg" width="400">
 <img src="images/final circuit 2.jpeg" width="400">
+<img src="images/final balanceboard.jpeg" width="400">
+<img src="imagesbase + wedges.jpeg" width="400">
 
 
 ```
