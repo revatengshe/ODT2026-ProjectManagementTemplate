@@ -840,7 +840,7 @@ What did you learn about:
 What would you improve next?
 
 **Response:**  
-`[Write here]`
+`[If we had one more week, we would focus on improving the usability of the balance board. In its current form, it felt more like a balancing challenge rather than an intuitive game controller, which led us to shift to a seated playing version. To address this, we would refine the shape of the dome by making it wider and shorter to improve stability. We would also increase the size of the standing platform to provide better support and comfort for the user. Additionally, we would redesign the base support system, replacing the wedge setup with a more stable and reliable structure to enhance overall control and ease of use.]`
 
 ---
 
