@@ -259,9 +259,7 @@ Include:
 ## 7.1 Concept Sketch
 Add an early sketch of the full idea.
 
-**Insert image below:** 
 <img src="images/odt final brainstorming.jpeg" width="400">
-
 
 
 
@@ -274,7 +272,8 @@ Add a sketch with labels showing:
 - output elements.
 
 **Insert image below:**  
-`[Upload image and link here]`
+<img src="images/balanceboard construction sketches.jpeg" width="400">
+<img src="images/sketches.jpeg" width="400">
 
 ## 7.3 Approximate Dimensions
 
