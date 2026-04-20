@@ -65,7 +65,7 @@ By the final review, this README should clearly show:
 `[Enter the title of your project]`
 
 ## 1.4 One-Line Pitch
-`A balance board that lets you control games like Fireboy and Watergirl with your body.`
+`A balance board that lets you control games like Fireboy and Watergirl using your feet.`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -75,9 +75,9 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`This is a motion-responsive balance board that turns shifts in body weight into game controls, reimagining how games like Fireboy and Watergirl are played. Video Games like Fireboy and Watergirl are controlled by keys on the keyboard like the arrow keys or keys like A,W,D. Instead of sitting and tapping arrow keys or A, W, D, you use your whole body—leaning, tilting, and trying to stay balanced while your characters move through the game. It’s a little chaotic, sometimes funny, and a lot more immersive. The game doesn’t just stay on the screen anymore, you feel part of it.`
+`This is a motion-responsive balance board that turns foot movement into game controls, reimagining how games like Fireboy and Watergirl are played. Video Games like Fireboy and Watergirl are controlled by keys on the keyboard like the arrow keys or keys like A,W,D. Instead of sitting and tapping arrow keys or A, W, D, the player sits on a chair and uses their feet to tilt and press the board. The game doesn’t just stay on the screen anymore, you feel involved in it through movement.`
 
-`Three ultrasonic sensors(jump, right, left) are placed under each board to track how it tilts by measuring the distance from the ground. As your weight shifts, those changes trigger a keypress on the keyboard which is connected to the ESP32 via bluetooth. So instead of pressing keys, your movements do the work, turning gameplay into something more physical and playful.`
+`Three ultrasonic sensors (jump, right, left) are placed under each board to track how it tilts by measuring the distance from the ground. As the player presses or tilts the board with their feet, those changes trigger a keypress on the keyboard, which is connected to the ESP32 via Bluetooth. So instead of pressing keys with your hands, your feet do the work, turning gameplay into something more physical and playful.`
 
 ---
 
@@ -103,9 +103,10 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`It’s an experience that engages you completely. Along with controlling your movement in the game, the player is also trying not to fall off the board, which adds this extra layer of tension that makes everything feel more alive and slightly chaotic in the best way.
-I want the player to feel a rush, like they’re fully switched on. It’s a mix of excitement, focus, and a bit of chaos, especially in the beginning when nothing really goes as planned. There’s also something a little funny about it; they might wobble, overcorrect, almost lose balance, but that’s part of the fun. And when they finally start getting it right, it feels genuinely satisfying.
-They’d want to try it again because it’s not something you get perfect in one go. The first attempt is messy, the second feels better, and after that you just want to keep improving or beat someone else. It also becomes more fun with people around—watching others try, laughing at the chaos, taking turns. There’s a clear sense of progression too, not just in the game but in how one's body learns to respond, which makes it really rewarding to come back to it.`
+`It’s an experience that engages you completely. Your mind is focused on the game, but your feet are constantly adjusting, pressing, and reacting. There’s a slight sense of chaos at first as you figure out how much to tilt or press, but that’s what makes it fun.`
+
+`I want the player to feel a rush—like they’re fully switched on. It’s a mix of excitement, focus, and a bit of trial and error, especially in the beginning when nothing really goes as planned. There’s also something kind of funny about it—you might over-press or react too slowly—but that becomes part of the experience. And when you finally get the hang of it, it feels genuinely satisfying.
+They’d want to try it again because it’s not something you master instantly. The first attempt is messy, the second feels better, and after that you just want to keep improving or beat someone else. It’s also more fun with people around—watching, reacting, and taking turns adds to the experience..`
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -148,14 +149,14 @@ Examples:
 - move object → sensor detects → sound/light response → player reacts
 
 **Response:**  
-`Player leans / shifts weight → board tilts → respective sensors detect movement → keypress triggered → video game character moves → player adjusts balance → repeat`
+`Player tilts board with feet → board moves → sensors detect change → keypress triggered → video game character moves → player adjusts feet → repeat`
 
 ## 4.2 Intended Player / Audience
 
 | Question | Response |
 |---|---|
 | Who is this for? | `Anyone who enjoys casual games and is open to a slightly chaotic, physical way of playing, especially people who like trying something new with friends` |
-| Age range | `7-65(or more if they can balance themself and manoeuvre with ease) ` |
+| Age range | `7+ ` |
 | Solo or multiplayer | `Multiplayer- 2 players` |
 | Expected duration of one round | `2-5 mins` |
 | What should the player feel? | `Focus, Excitement, Satisfaction` |
@@ -164,10 +165,10 @@ Examples:
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
 
-1. **Approach:** `They see the video game being projected on a screen and two balance boards kept in front of the screen`
-2. **Start:** `By standing on their respective balance boards`
+1. **Approach:** `They see the video game being projected on a screen and two balance boards and two chairs kept in front of the screen`
+2. **Start:** `By sitting on a chair and placing their feet on the balance board`
 3. **First Action:** `Figuring out the controls and the amount of tilt required`
-4. **Main Interaction:** `The player tilts the balance board, it hits a wedge kept on its respective direction to prevent the balance board from toppling over`
+4. **Main Interaction:** `he player presses and tilts the board with their feet, controlling movement through foot pressure and direction`
 5. **System Response:** `For example, if the watergirl balance board is tilted towards the right, the ultrasonic sensor on the right will trigger a 'D' keypress which will make Watergirl move to the right. The same for Fireboy and his respective controls.  `
 6. **Win / Lose / End Condition:** `Win: When both the characters are able to successfully make it till the end of the level. 
                                     Lose: When one of the character dies`
@@ -176,13 +177,11 @@ Describe exactly how a player will use the project.
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `The character moves according to the direction the player tilts the balance board`
 - `The game starts once both players are ready and balanced.`
-- `Players control their characters by leaning and shifting their body weight. No hands, no keyboard.`
+- `The character moves according to how the player presses or tilts the balance board with their feet`  
+- `Players control their characters using only their feet—no hands, no keyboard  `
 - `If even one player dies, the other one dies as well`
 - `Both the players need to finish the level to win`
-- `Each player is allowed to fall off the balance board only once. If the player falls off the balance board more than once, they will have to restart the level`
-
 ---
 
 # 5. Definition of Success
@@ -214,7 +213,7 @@ What features are nice to have but not essential?
 ## 6.1 Project Type
 Check all that apply.
 
-- [ ] Electronics-based
+- [+] Electronics-based
 - [ ] Mechanical
 - [+] Sensor-based
 - [ ] App-connected
@@ -238,12 +237,12 @@ Include:
 - app interaction if any.
 
 **Response:** 
-`The input comes from the player standing on a balance board and shifting their weight. As the board tilts, ultrasonic sensors placed underneath measure the changing distance between the board and the ground. Multiple readings are taken and averaged to make the input smoother and reduce noise. `
+` The input comes from the player sitting on a chair and using their feet to press and tilt a balance board. As the board moves, ultrasonic sensors placed underneath measure the changing distance between the board and the ground. Multiple readings are taken and averaged to make the input smoother and reduce noise. `
 
 `This data is processed by the ESP32, which checks whether the distances fall within a specific range(which is calibrated according to the height of the balance board and coded). If they do, the movement is considered intentional and mapped to corresponding actions like left, right, or jump for each player. `
 
-`This is then converted to a signal which triggers the respective keypress on the keyboard, which is connected to the ESP32 via bluetooth. The game responds by moving the characters accordingly. Physically, the setup consists of a raised balance board with ultrasonic sensors mounted underneath and connected to the ESP32, creating a system where your body directly controls the gameplay.`
- 
+`This is then converted to a signal which triggers the respective keypress on the keyboard, which is connected to the ESP32 via bluetooth. The game responds by moving the characters accordingly. Physically, the setup consists of two balance board with ultrasonic sensors mounted underneath and connected to the ESP32, creating a system where your feet directly control the gameplay, along with two chairs kept behind the balance boards.`
+
 ## 6.3 Input / Output Map
 
 | System Part | Type | What It Does |
@@ -251,7 +250,7 @@ Include:
 | `Sensor` | Input | `Measures the distance between the board and the ground to detect tilt and weight shifts` |
 | `ESP32 ` | Processing | `Reads sensor data, filters/smooths it, checks for trigger conditions, and converts movements into keyboard inputs` |
 | `BLE Keyboard` | Output | `Transmits the mapped inputs wirelessly as keyboard signals to the computer` |
-| `Balance Board` | Physical Action | `Lets the player shift weight and create the inputs through body movement` |
+| `Balance Board` | Physical Action | `Lets the player press and tilt the board using their feet while seated` |
 
 ---
 
@@ -261,8 +260,7 @@ Include:
 Add an early sketch of the full idea.
 
 **Insert image below:**  
-`<img width="551" height="342" alt="image" src="https://github.com/user-attachments/assets/60c6d2f2-7a64-4dd7-b405-5efa2feba472" />
-`
+
 
 Example:
 ```md
@@ -284,10 +282,10 @@ Add a sketch with labels showing:
 
 | Dimension | Value |
 |---|---|
-| Length | `[Write here]` |
-| Width | `[Write here]` |
-| Height | `[Write here]` |
-| Estimated weight | `[Write here]` |
+| Length | `44cm` |
+| Width | `44cm` |
+| Height | `10cm` |
+| Estimated weight | `7-8kg` |
 
 ---
 
@@ -307,13 +305,17 @@ Check all that apply.
 - [ ] Wheels
 - [ ] Sliders
 - [ ] Levers
-- [ ] Not applicable
+- [+] Not applicable
 
 ## 8.2 Mechanical Description
 Describe the mechanism and what it is meant to do.
 
 **Response:**  
-`[Write here]`
+`The system uses a tilting balance board that responds to pressure from the player’s feet. The board is slightly elevated and rests on a central support, allowing it to tilt in multiple directions. When the player presses down with their feet, the board tilts towards that side.`
+
+`Stoppers or wedges are placed around the board to limit how far it can tilt, preventing it from flipping over and ensuring controlled movement. Ultrasonic sensors are mounted underneath the board at specific positions (left, right, jump) to detect how close each side gets to the ground when tilted.`
+
+`The goal of the mechanism is to convert small foot movements into controlled directional tilts that can be reliably detected by the sensors.`
 
 ## 8.3 Motion Planning
 If something moves, explain:
@@ -324,7 +326,13 @@ If something moves, explain:
 - what could go wrong.
 
 **Response:**  
-`[Write here]`
+`The balance board is the main moving part. It tilts based on how the player presses or shifts weight using their feet.`
+
+`The movement is caused by downward pressure from the player’s feet, which makes one side of the board go closer to the ground. The tilt range is limited using wedges or physical stops, so the movement stays controlled and doesn’t become unstable.`
+
+`The board moves only a few centimeters in height difference, just enough for the ultrasonic sensors to detect changes. The movement is quick and responsive, depending on how fast the player presses.`
+
+`Possible issues include uneven tilting, sensors not detecting small movements, or the board being too sensitive or not sensitive enough. These are handled by calibrating the sensor range and adjusting the height and angle of the board.`
 
 ## 8.4 Simulation / CAD / Animation Before Making
 If your project includes mechanical motion, document the digital planning before fabrication.
@@ -338,7 +346,7 @@ If your project includes mechanical motion, document the digital planning before
 What changed after the CAD, animation, or simulation stage?
 
 **Response:**  
-`[Write here]`
+`n/a`
 
 ---
 
@@ -348,15 +356,22 @@ What changed after the CAD, animation, or simulation stage?
 
 | Component | Quantity | Purpose |
 |---|---:|---|
-| `[ESP32]` | `1` | `[Main controller]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
+| `[ESP32]` | `1` | `Main controller and Bluetooth communication` |
+| `Ultrasonic Sensor (HC-SR04)` | `6` | `Detect distance changes for movement input` |
+| `Jumper wires` | `approximately 120` | `Connections between components` |
+| `Breadboard` | `1` | `Circuit assembly` |
+| `Power supply` | `1` | `Powers the ESP32` |
+
 
 ## 9.2 Wiring Plan
 Describe the main electrical connections.
 
 **Response:**  
-`[Write here]`
+`Each ultrasonic sensor is connected to the ESP32 using two pins: one for trigger and one for echo. The sensors are placed under the board in positions corresponding to left, right, and jump for each player.`
+
+`All sensors share a common wire for power (VCC) and ground (GND).`
+
+`The ESP32 is powered via USB and communicates with the computer through Bluetooth.`
 
 ## 9.3 Circuit Diagram
 Insert a hand-drawn or software-made circuit diagram.
@@ -368,10 +383,10 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Question | Response |
 |---|---|
-| Power source | `[USB / battery / adapter / other]` |
-| Voltage required | `[Write here]` |
-| Current concerns | `[Write here]` |
-| Safety concerns | `[Write here]` |
+| Power source | `USB(from laptop and adapter)` |
+| Voltage required | `5V` |
+| Current concerns | `Multiple sensors running simultaneously may increase power draw. ` |
+| Safety concerns | `Proper insulation of wires, stable mounting of components to avoid loose connections` |
 
 ---
 
@@ -397,7 +412,15 @@ Include:
 - reset behavior.
 
 **Response:**  
-`[Write here]`
+`When the system starts, the ESP32 initializes the Bluetooth keyboard and waits for a connection with the computer.`
+
+`Once connected, it continuously reads distance values from all ultrasonic sensors. To reduce noise, multiple readings are taken and averaged for each sensor.`
+
+`The system then checks whether each distance falls within a defined trigger range. If it does, that movement is considered active (left, right, or jump).`
+
+`These active movements are mapped to corresponding keyboard inputs for Fireboy (arrow keys) and Watergirl (W, A, D). The ESP32 then sends these inputs via Bluetooth as keyboard signals.`
+
+`This loop runs continuously, allowing real-time control of the game. If the connection drops, all inputs are reset to avoid stuck keys.`
 
 ## 10.3 Code Flowchart
 Insert a flowchart showing your code logic.
@@ -417,8 +440,31 @@ Suggested sequence:
 
 ## 10.4 Pseudocode
 
-```text
-[Write your pseudocode here]
+```
+Start
+Initialize BLE keyboard
+Wait for Bluetooth connection
+
+Loop:
+    If connected:
+        For each sensor:
+            Read distance multiple times
+            Average readings
+
+        For each reading:
+            Check if within trigger range
+
+        Map active triggers to key inputs
+
+        Limit to 6 keys (HID limit)
+
+        Send key inputs via Bluetooth
+
+    Else:
+        Send no input (reset keys)
+
+    Small delay
+Repeat
 ```
 
 ---
@@ -427,7 +473,7 @@ Suggested sequence:
 
 ## 11.1 Is an app part of this project?
 - [ ] Yes
-- [ ] No
+- [+] No
 
 If yes, complete this section.
 
@@ -474,9 +520,10 @@ Insert a sketch or screenshot of the app interface.
 
 | Item | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec | Why This Choice? |
 |---|---:|---|---|---:|---|---|
-| `[ESP32]` | `1` | `Yes` | `No` | `0` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
+| `[ESP32]` | `1` | `Yes` | `No` | `0` | `[Spec]` | `Controller` |
+| `Ultrasonic Sensors` | `6` | `1 yes 5 no` | `No(borrowed)` | `-` | `[Spec]` | `Sensor` |
+| `Jumper wires` | `Apprx 120` | `Yes` | `Yes` | `200` | `[Spec]` | `We needed to make our wires long so that moving the balance board won't move the breadboard along with it` |
+
 
 ## 12.2 Material Justification
 Explain why you selected your main materials and components.
@@ -488,7 +535,7 @@ Examples:
 - Why bearing instead of a plain shaft hole?
 
 **Response:**  
-`[Write here]`
+`- We `
 
 ## 12.3 Items to Purchase Separately
 
@@ -678,7 +725,8 @@ Include:
 - revisions.
 
 **Response:**  
-`[Write here]`
+`The balance board was physically fabricated. The hemisphere/dome(lower part) of the balance board was made of HDF(High-Density Fibreboard) and the top circle was made of plywood. The wedges were made of MDF and the base for the wedges was made of sunboard.  
+The HDF and Plywood were cut using the electric saw and the band saw. The MDF was also cut using the bandsaw `
 
 ## 17.2 Build Photos
 Add photos throughout the project.
