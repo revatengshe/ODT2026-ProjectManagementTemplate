@@ -575,32 +575,36 @@ Include:
 - how documentation will be maintained.
 
 **Response:**  
-`[Write here]`
+`[⁠ We are dividing tasks based on our strengths but still staying involved in each other’s work so everything stays connected. Reva is focusing more on coding and system logic, while Ananya is focusing more on fabrication and electronics setup, but both of us contribute to testing, ideation, and problem-solving. ⁠]`
+`[Decisions are made collaboratively. We discuss different options, test what works better, and go with the one that feels more reliable and practical rather than just theoretical⁠]`
+`[⁠ We check progress regularly during class by reviewing what’s working and what isn’t, and adjusting our plan accordingly. Most of our decisions come from actually testing things instead of just planning. ⁠]`
+`[⁠⁠ If a task gets delayed, we either simplify it or redistribute the work so it doesn’t block the rest of the project. We try to prioritise getting a working version first before refining details.]`
+`[⁠Documentation is maintained alongside the build process. We update the README as we go, especially after major changes, testing, or failures, so nothing gets missed later.]`
 
+⁠
 ## 13.2 Task Breakdown
 
 | Task ID | Task | Owner | Estimated Hours | Deadline | Dependency | Status |
 |---|---|---|---:|---|---|---|
-| T1 | `[Finalize concept]` | `[Name]` | `2` | `[Date]` | `None` | `To Do` |
-| T2 | `[Complete BOM]` | `[Name]` | `1` | `[Date]` | `T1` | `To Do` |
-| T3 | `[Test electronics]` | `[Name]` | `2` | `[Date]` | `T1` | `To Do` |
-| T4 | `[Build structure]` | `[Name]` | `4` | `[Date]` | `T1` | `To Do` |
-| T5 | `[Write control code]` | `[Name]` | `4` | `[Date]` | `T3` | `To Do` |
-| T6 | `[Integrate system]` | `[Name]` | `4` | `[Date]` | `T4, T5` | `To Do` |
-| T7 | `[Playtest]` | `[Name]` | `2` | `[Date]` | `T6` | `To Do` |
-| T8 | `[Refine and document]` | `[Name]` | `3` | `[Date]` | `T7` | `To Do` |
+| T1 | `[Finalize concept]` | `[⁠ Reva and Ananya]` | `2` | `[W1]` | `None` | `DONE` |
+| T2 | `[Complete BOM]` | `[⁠ Ananya]` | `1` | `[W4]` | `T1` | `DONE` |
+| T3 | `[Test electronics]` | `[Ananya and Reva]` | `2` | `[W2]` | `T1` | `DONE` |
+| T4 | `[Build structure]` | `[Ananya and Reva]` | `4` | `[W3]` | `T1` | `DONE` |
+| T5 | `[Write control code]` | `[Reva]` | `4` | `[W2]` | `T3` | `DONE` |
+| T6 | `[Integrate system]` | `[Reva and Ananya]` | `4` | `[W4]` | `T4, T5` | `DONE` |
+| T7 | `[Playtest]` | `[Ananya and Reva]` | `2` | `[W4]` | `T6` | `DONE` |
+| T8 | `[Refine and document]` | `[Reva and Ananya]` | `3` | `[W4]` | `T7` | `DONE` |
 
 ## 13.3 Responsibility Split
 
 | Area | Main Owner | Support Owner |
 |---|---|---|
-| Concept and gameplay | `[Name]` | `[Name]` |
-| Electronics | `[Name]` | `[Name]` |
-| Coding | `[Name]` | `[Name]` |
-| App | `[Name]` | `[Name]` |
-| Mechanical build | `[Name]` | `[Name]` |
-| Testing | `[Name]` | `[Name]` |
-| Documentation | `[Name]` | `[Name]` |
+| Concept and gameplay | `[Reva]` | `[Ananya]` |
+| Electronics | `[Ananya]` | `[Reva]` |
+| Coding | `[Reva]` | `[Ananya]` |
+| Mechanical build | `[Ananya]` | `[Reva]` |
+| Testing | `[Ananya]` | `[Reva]` |
+| Documentation | `[Reva]` | `[Ananya]` |
 
 ---
 
@@ -646,10 +650,10 @@ Expected outcomes:
 
 | Week | Planned Goal | What Actually Happened | What Changed | Next Steps |
 |---|---|---|---|---|
-| Week 1 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 2 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 3 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 4 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 1 | `[Finalize idea, explore interaction, make sketches]` | `[Explored multiple ideas like conductive mats and balance board, made initial sketches ⁠]` | `[ Decided to start with touch-based conductive system ]` | `[⁠ Build and test basic touch input prototype ]` |
+| Week 2 | `[Test electronics and sensing method ]` | `[ ⁠ Tested aluminium foil + touch sensing, faced false triggers and unreliable input]` | `[Realized capacitive touch is not stable for this setup ]` | `[Shift to ultrasonic sensors for better accuracy ⁠]` |
+| Week 3 | `[Build working prototype and integrate system]` | `[Implemented ultrasonic sensors, tested tilt detection, faced issues with multi-input (jump + direction) ⁠ ]` | `[Improved code logic and added smoothing to reduce noise ⁠]` | `[Refine sensor calibration and improve multi-input handling ⁠]` |
+| Week 4 | `[Final integration and playtesting]` | `[Switched from standing to seated (feet control), system became more stable and playable ⁠ ]` | `[Major interaction change from full-body to feet-based control ]` | `[⁠ Final calibration, improve structure, add labels and polish experience]` |
 
 ---
 
@@ -659,10 +663,12 @@ Expected outcomes:
 
 | Risk | Type | Likelihood | Impact | Mitigation Plan | Owner |
 |---|---|---|---|---|---|
-| `[Example: Bluetooth disconnects]` | `Technical` | `Medium` | `High` | `[Fallback interaction / simplify connection flow]` | `[Name]` |
-| `[Example: Structure breaks during play]` | `Mechanical` | `Medium` | `High` | `[Reinforce joints / change material]` | `[Name]` |
-| `[Risk]` | `[Technical / Material / Time / Gameplay]` | `[Low/Medium/High]` | `[Low/Medium/High]` | `[Plan]` | `[Name]` |
-| `[Risk]` | `[Type]` | `[Low/Medium/High]` | `[Low/Medium/High]` | `[Plan]` | `[Name]` |
+| `[Bluetooth disconnection or lag ]` | `Technical` | `Medium` | `High` | `[Reconnect logic in code, keep device close, test multiple times before use ⁠]` | `[Reva]` |
+| `[ Ultrasonic sensor noise / false readings]` | `Technical` | `High` | `Medium` | `[Use averaging, threshold ranges, and anti-flicker logic in code]` | `[Reva]` |
+| `[Jump + direction not triggering together]` | `[Technical]` | `[Medium/]` | `[High]` | `[Improve code logic to handle multiple inputs simultaneously]` | `[Reva]` |
+| `[Structure instability while using feet ⁠ ]` | `[Mechanical]` | `[Medium]` | `[High]` | `[Add wedges/stoppers to limit tilt and stabilize board]` | `[Ananya]` |
+| `[Sensors not aligned properly under board ]` | `[Mechanical]` | `[Medium]` | `[High]` | `[Add a base for the wedges]` | `[Ananya]` |
+| `[⁠ Users don’t understand controls]` | `[Gameplay]` | `[Low]` | `[Medium]` | `[Add labels (L, R, J)]` | `[Ananya]` |
 
 ## 15.2 Biggest Unknown Right Now
 What is the single biggest uncertainty in your project at this stage?
