@@ -52,7 +52,7 @@ By the final review, this README should clearly show:
 # 1. Team Identity
 
 ## 1.1 Studio / Group Name
-`[Enter your group name]`
+`[Team Balanceboard]`
 
 ## 1.2 Team Members
 
@@ -114,7 +114,7 @@ Complete the sentence below:
 > We are designing this project as if we are a small creative studio making a **[toy / game / playable object / interactive experience]** for **[children / teens / adults / classmates / exhibition visitors / mixed audience]**.
 
 **Response:**  
-`we are designing this project as if we are a small creative studio making an interactive experience for a children, teens and adults`
+`We are designing this project as if we are a small creative studio making an interactive experience for a children, teens and adults`
 
 ---
 
@@ -156,7 +156,7 @@ Examples:
 | Question | Response |
 |---|---|
 | Who is this for? | `Anyone who enjoys casual games and is open to a slightly chaotic, physical way of playing, especially people who like trying something new with friends` |
-| Age range | `7+ ` |
+| Age range | `13+ ` |
 | Solo or multiplayer | `Multiplayer- 2 players` |
 | Expected duration of one round | `2-5 mins` |
 | What should the player feel? | `Focus, Excitement, Satisfaction` |
@@ -259,13 +259,11 @@ Include:
 ## 7.1 Concept Sketch
 Add an early sketch of the full idea.
 
-**Insert image below:**  
+**Insert image below:** 
+<img src="images/odt final brainstorming.jpeg" width="400">
 
 
-Example:
-```md
 
-```
 
 ## 7.2 Labeled Build Sketch
 Add a sketch with labels showing:
